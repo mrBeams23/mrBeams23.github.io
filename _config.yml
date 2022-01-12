@@ -1,4 +1,6 @@
-title: Your awesome title
+gem "minima"
+
+title: testing the thingy
 author:
   name: GitHub User
   email: your-email@domain.com
@@ -13,6 +15,12 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
+
+
+
+
+ # command for running server     bundle exec jekyll serve
+
 
   # generate social links in footer
   social_links:
