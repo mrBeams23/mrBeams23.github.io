@@ -6,9 +6,19 @@ author:
 - Bart Simpson
 - Nelson Mandela Muntz
 meta: "Springfield"
+searchable: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
+
+{% if post.excerpt %}
+<p><a href="{{ post.url }}">(more...)</a></p>
+{% endif %}
+
+<!--cut-->
+
+
+
 
 ## Some great heading (h2)
 

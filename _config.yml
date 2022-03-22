@@ -1,27 +1,32 @@
-title: testing the thingy
-author: tester
-name: GitHub-User
-email: your-email@domain.com
+title: DropperSec's Blog
+author:
+  name: DropperSec
+  email: DropperSec@protonmail[.]com
+description: > # this means to ignore newlines until "show_excerpts:"
+  This blog is a way to show off all the porjects I'm working on to the community.
 
-description: Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+show_excerpts: true # set to true to show excerpts on the homepage
+excerpt_separator: <!--cut-->
+paginate: 5
 
-show_excerpts: false # set to true to show excerpts on the homepage
+# Disqus comments
+disqus:
+  shortname:  DropperSec
+
+# Google Analytics
+google_analytics: 
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
 
-
-
-
- # command for running server     bundle exec jekyll serve
-
-
   # generate social links in footer
   social_links:
-    twitter: jekyllrb
-    github:  jekyll
+    twitter:
+      url: https://twitter.com/
+    github:
+      url: https://github.com/DropperSec
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
@@ -35,7 +40,8 @@ minima:
     # telegram: jekyll
     # googleplus: +jekyll
     # microdotblog: jekyll
-    # keybase: jekyll
+    keybase:
+      url: https://keybase.io
 
     # Mastodon instances
     # mastodon:
@@ -58,7 +64,25 @@ minima:
 
 # Build settings
 theme: minima
+markdown: kramdown
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+  - jekyll-toc
+
+header_pages:
+  - pages/about2.md
+  - pages/posts.md
+  - pages/categories.md
+  #- pages/tags.md
+  #- pages/cheatsheet.md
+  #- index.html
+  - pages/FutureProjects.md
+  ##########
+
+category_page: /categories
+tag_page: /tags

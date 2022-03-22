@@ -1,14 +1,32 @@
 /**
  * Site header
  */
-.site-header {
+ .site-header {
   border-top: 5px solid $border-color-03;
   border-bottom: 1px solid $border-color-01;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
 
+
+
+  .search-container {
+
+    color:red;
+
+  }
+
+
+
   // Positioning context for the mobile navigation icon
-  position: relative;
+ // position: relative;
+
+  //position: fixed;
+  //top: 0;
+  //width: 100%;
+  //height: $masthead-height;
+
+
+
 }
 
 .site-title {
@@ -120,7 +138,7 @@
 
 /**
  * Site footer
- */
+
 .site-footer {
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
@@ -132,20 +150,72 @@
 }
 
 .feed-subscribe .svg-icon {
-  padding: 5px 5px 2px 0
+  padding: 20px 20px 20px 20
 }
 
 .contact-list,
 .social-media-list {
   list-style: none;
   margin-left: 0;
+  
 }
 
 .footer-col-wrapper,
+ */
+
+
+
+/* footer */
+footer{
+	min-height: 50px;
+	line-height: 50px;
+	margin-top: 80px;
+	background: #3f4850;
+	color: #aaa;
+	text-align: center;
+
+	-webkit-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+	-o-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+	box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+}
+footer a:link {color: #aaa}		/* 未访问的链接 */
+footer a:visited {color: #888}	/* 已访问的链接 */
+footer a:hover {color: #bbb;text-decoration: none;}	/* 鼠标移动到链接上 */
+footer a:active {color: #bbb}	/* 选定的链接 */
+footer .point{
+	margin: 0 8px;
+}
+/**
+ * Icons
+ */
+.icon svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+/*
 .social-links {
   @include relative-font-size(0.9375);
   color: $brand-color;
 }
+*/
+
+.social-links {
+  @include relative-font-size(1.5);
+  color: $brand-color;
+}
+
 
 .footer-col {
   margin-bottom: $spacing-unit / 2;
@@ -242,6 +312,7 @@
 }
 
 .post-title,
+
 .post-content h1 {
   @include relative-font-size(2.625);
   letter-spacing: -1px;

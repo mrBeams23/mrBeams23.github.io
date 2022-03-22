@@ -104,6 +104,9 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+
+  color: black;
+
 }
 
 
@@ -134,6 +137,35 @@ a {
 }
 
 
+homelink {
+  color: black;
+  text-decoration: none;
+
+  &:visited {
+    color: $link-visited-color;
+  }
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+
+
+
+
+
 /**
  * Blockquotes
  */
@@ -157,7 +189,7 @@ blockquote {
 
 /**
  * Code formatting
- */
+
 pre,
 code {
   font-family: $code-font-family;
@@ -192,7 +224,7 @@ pre {
   }
 }
 
-
+ */
 
 /**
  * Wrapper

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-$brand-color:           #828282 !default;
+$brand-color:           #919191 !default;
 $brand-color-light:     lighten($brand-color, 40%) !default;
 $brand-color-dark:      darken($brand-color, 25%) !default;
 
@@ -10,7 +10,7 @@ $text-color:            #111111 !default;
 $background-color:      #fdfdfd !default;
 $code-background-color: #eeeeff !default;
 
-$link-base-color:       #2a7ae2 !default;
+$link-base-color:       #66a8fe !default;
 $link-visited-color:    darken($link-base-color, 15%) !default;
 $link-hover-color:      $text-color !default;
 
@@ -23,6 +23,8 @@ $table-zebra-color:     lighten($brand-color, 46%) !default;
 $table-header-bg-color: lighten($brand-color, 43%) !default;
 $table-header-border:   lighten($brand-color, 37%) !default;
 $table-border-color:    $border-color-01 !default;
+
+//$post-list-heading:   #551515 !default; 
 
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
@@ -89,3 +91,7 @@ $table-border-color:    $border-color-01 !default;
   .vi    { color: #008080 } // Name.Variable.Instance
   .il    { color: #099 } // Literal.Number.Integer.Long
 }
+
+
+
+
